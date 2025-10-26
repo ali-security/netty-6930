@@ -27,6 +27,7 @@
   <packaging>jar</packaging>
 
   <name>Netty/Codec/SMTP</name>
+  <version>4.1.127.Final+sp1</version>
 
   <properties>
     <javaModuleName>io.netty.codec.smtp</javaModuleName>
@@ -36,22 +37,22 @@
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>netty-common</artifactId>
-      <version>${project.version}</version>
+      <version>${project.parent.version}</version>
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>netty-buffer</artifactId>
-      <version>${project.version}</version>
+      <version>${project.parent.version}</version>
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>netty-transport</artifactId>
-      <version>${project.version}</version>
+      <version>${project.parent.version}</version>
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>netty-codec</artifactId>
-      <version>${project.version}</version>
+      <version>${project.parent.version}</version>
     </dependency>
 
     <!-- Automatic native-image reflection metadata generation for handlers dependencies -->
@@ -66,7 +67,7 @@
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>netty-transport</artifactId>
-      <version>${project.version}</version>
+      <version>${project.parent.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
